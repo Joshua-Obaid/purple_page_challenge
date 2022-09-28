@@ -1,0 +1,207 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    width: 100%;
+}
+.container{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    background-color: #2e323f;
+    padding:0.5em;
+    font-size: 1.189rem;
+}
+.nav__list{
+    display:flex ;
+    list-style: none;
+    text-align: center;
+}
+.logo{
+    margin-top: 1em;
+}
+.list__item{
+    list-style-type: none;
+}
+.nav__link{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'oswald';
+}
+.list__item + .list__item {
+    margin-left: 1em;
+}
+.nav__link:hover,
+.nav__link:focus{
+    opacity: .65;
+}
+.button,
+.hero__button{
+    background-color: #A59678;
+    padding: 0.45rem 0.8rem ;
+    border-radius: 100px; 
+    color: white;
+    text-decoration: none;
+    font-family: 'oswald';
+}
+.hero__button{
+    font-size: 1.3rem;
+    text-align: center;
+}
+.hero{
+    background-color: #3B4050;
+    padding: 2.6em;
+    color:white;
+    margin: 0px;
+}
+.hero__heading{
+    font-family: 'oswald';
+    font-size: 4rem;
+    line-height: 4rem;
+}
+.hero__p{
+    font-family: 'Montserrat';
+    font-size: 1.678rem;
+    margin-bottom: 2em;
+}
+
+.three-col{
+    background-color: #f1f1f1;
+    margin: 0px;
+    padding: 2em;
+}
+.peiceheading{
+    font-size: 2rem; ;
+    font-family: 'oswald';
+    color: #A59678;
+}
+.peice-p{
+    font-size: 1.3rem;
+    font-family: 'Montserrat';
+    
+}
+.peice{
+    text-align: center;
+}
+.main{
+    padding: 1em 1em 2em 1em;
+}
+img{
+    width: 100%;
+}
+.main-content-title{
+    font-size: 2rem;
+    color:#A59678 ;
+    font-family: 'oswald';
+}
+.main-content-p,
+.box-p{
+    font-family: 'Montserrat';
+    font-size: 1.3rem;
+}
+.box{
+    background-color: #3B4050;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    margin-top: 1em;
+}
+.box-title{
+    font-family: 'oswald';
+    font-size: 1.5rem;
+}
+.footer{
+    background-color:#2E323F ; 
+    padding: 2em;
+    margin: 0px;
+    text-align: center;
+}
+.footer-title{
+    font-size: 1.89rem;
+    font-family:'oswald' ;
+    color: white;
+}
+.footer-content-title{
+    color: #A59678;
+    font-family: 'oswald';
+    font-size: 1.47rem;
+}
+.footer-content-p{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    
+}
+span{
+    color: #A59678;
+}
+
+@media (min-width:700px){
+    .row1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero__heading{
+        width: 40%;
+    }
+    .hero__sideText{
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .three-col-row{
+        display: flex;
+        justify-content: space-around;
+    }
+    .peice{
+        width: 27%;
+    }
+    .box{
+        width: 30%;
+    }
+    .boxes3{
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer-smaller-row{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media (min-width:1000px){
+    .row1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .row-main{
+        display: flex;
+        justify-content: space-between;
+    }
+    main.content{
+        width: 65%;
+    }
+    main.boxes3{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+    }
+    .footer-row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-content{
+        width: 21%;
+    }
+}
